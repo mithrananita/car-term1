@@ -49,9 +49,7 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-
-![alt text][image1]
+See Output [5] in the Jupyter Notebook
 
 ### Design and Test a Model Architecture
 
