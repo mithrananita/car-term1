@@ -5,6 +5,9 @@
 
 **Build a Traffic Sign Recognition Project**
 
+Please use my jupyter notebook for a full writeup with code and explanation
+
+https://github.com/mithrananita/car-term1/blob/master/Project2/Project2_Sign_Classifier.ipynb
 
 This project is to take German traffic sign data, loaded as 32x32 color images, and classify them properly. Data provided as input is
 * training dataset (35k images)
@@ -57,7 +60,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 As a first step, I decided to convert the images to grayscale because for sign recognition color is less important than luminance/contrast and shapes
 
 I did a simple conversion to Luminance using the following function
-https://en.wikipedia.org/wiki/Relative_luminance
+https://en.wikipedia.org/wiki/YIQ
 
 I then converted to a simple normalized value using the (pixel - 128)/ 128  function
 
@@ -68,10 +71,10 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x1 Greyscale image normalized between -0.5 and 0.5 (0 mean)   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
+| Convolution 5x5     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|				Rectified Linear Function								|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
-| Convolution 3x3	    |  14x14x6 input output 10x10x6     									|
+| Convolution 5x5	   | stride 1x1 14x14x6 input output 10x10x6     									|
 | RELU					|				Rectified Linear Function								|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x6 				|
 | Fully connected		| 120 outputs .        									|
