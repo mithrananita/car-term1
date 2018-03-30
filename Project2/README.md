@@ -5,15 +5,22 @@
 
 **Build a Traffic Sign Recognition Project**
 
-The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
-* Explore, summarize and visualize the data set
-* Design, train and test a model architecture
-* Use the model to make predictions on new images
-* Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
 
+This project is to take German traffic sign data, loaded as 32x32 color images, and classify them properly. Data provided as input is
+* training dataset (35k images)
+* Validation dataset (4k images)
+* and Test dataset (12.6k images)
 
+The task is to train and repeatedly test on the validation dataset, but try on the test dataset only once.This python notebook will attempt to go through each step
+
+1. setting up loading
+2. Visualizing the data
+3. normalizing images
+4. setting up the convolutional neural network,
+5. calculating a cost function and validation accuracy (using adams optimizer)
+
+And running over multiple EPOCHS and batches till adjust weights converge to 1 (or as close as possible)
+I will then attempt to train new traffic images loaded off the web with this classifier once this is done.
 
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
